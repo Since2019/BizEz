@@ -1,0 +1,23 @@
+{
+  "name": "projecthub",
+  "version": "1.0.0",
+  "description": "Biz Hack",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rickson2019/ProjectHub.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rickson2019/ProjectHub/issues"
+  },
+  "homepage": "https://github.com/Rickson2019/ProjectHub#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  }
+}
