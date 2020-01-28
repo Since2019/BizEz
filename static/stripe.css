@@ -1,0 +1,78 @@
+ <style>
+      body {padding-left: 5vw;
+            padding-right: 5vw;}
+      div > span{background-color: white;
+      display: inline;
+      }
+      div ~ p{
+        margin-left:auto;
+        margin-right:auto;
+        font-size: 170%;
+        font-stretch: expanded
+      }
+      .lump-top{font-size: 24pt;
+         width: 100%;
+         text-align: center;
+         border-top: 7pt solid #a7894c;
+         border-bottom: 7pt solid #a7894c;
+         line-height: 0.15em;
+         margin: 10px 0 15px;
+         background-color: #a7894c;
+      }
+      .lump-second{font-size: 24pt;
+        width: 100%;
+           text-align: center;
+           border-top: 7pt solid #a5d4e8;
+           border-bottom: 7pt solid #a5d4e8;
+           line-height: 0.15em;
+           margin: 10px 0 15px;
+           background-color:  #a5d4e8;
+      }
+      
+      .lump-third{font-size: 24pt;
+        width: 100%;
+           text-align: center;
+           border-top: 7pt solid #c94934;
+           border-bottom: 7pt solid #c94934;
+           line-height: 0.15em;
+           margin: 10px 0 15px;
+           background-color: #c94934;}
+
+      
+      #small{font-size: 105%;}
+      
+       .lump-fourth{font-size: 24pt;
+        width: 100%;
+           text-align: center;
+           border-top: 6pt solid #b2b52f;
+           border-bottom: 7pt solid #b2b52f;
+           line-height: 0.15em;
+           margin: 10px 0 15px;
+           background-color: #b2b52f;}
+ 
+      h2 {
+         font-size: 24pt;
+         width: 100%;
+         text-align: center;
+         border-top: 11pt solid #aabbcc;
+         border-bottom: 5pt solid #aabbcc;
+         background-color: #aabbcc;
+      }
+
+      h2 span {
+          background:#ffffff;
+          padding:0 10px;
+      }
+      
+      h1 {
+        text-align: justify;
+        letter-spacing: 0.18em;
+      }
+      h1:after {
+        display: inline-block;
+        content:"";
+        width:120%;
+      }
+    </style>
+    
+    
