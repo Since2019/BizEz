@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Rickson2019/ProjectHub#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "http-msgs": "^1.0.9",
     "mongodb": "^3.5.2",
     "nodemon": "^2.0.2"
   }

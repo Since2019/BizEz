@@ -4,7 +4,8 @@ const express = require('express');
 var MongoClient = require('mongodb').MongoClient;
 //const fs
 const fs = require('fs');
-
+//const httpMsg
+const httpMsg = require('http-msgs');
 
 
 //initialize express as 'app'
@@ -33,13 +34,7 @@ app.use('/js', express.static('static/script'));
 app.use('/css', express.static('static/style'));
 app.use('/img', express.static('static/img'));
 
-// Make our db accessible to our router
-app.use(function(req,res,next){
-    req.db = db;
-    next();
-});
 
-app.use('/users', users);
 
 
 
@@ -88,6 +83,15 @@ app.get('/drop', (req, res) => {
   
 })
 
+//drop Collection
+app.get('/newUser', (req, res) => {
+    var data = req.body;
+    console.log(data);
+    httpMsg.sendJSON(req,res,{
+        from : "server"
+    })
+})
+
 
 
 
@@ -129,6 +133,6 @@ function dropDB() {
 //Backend log info
 console.log("welcome to Project Hub");
 //runs on port >>>>>>>>>>>>>>>>> vv
-const PORT = process.env.PORT || 190;
+const PORT = process.env.PORT || 191;
 //
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));

@@ -2,24 +2,70 @@
 <html>
 
 <head>
-
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  </script>
 </head>
 
 <body>
 	<form>
-		<label>Input Your stdID</label><br/>
-		<input type="text"><br/><br/>
-		<label>Input Your name</label><br/>
-		<input type="text"><br /><br />
+		<label>Input Your stdID</label><br />
+		<input type="text" id='stdID'><br /><br />
+		<label>Input Your name</label><br />
+		<input type="text" id='name'><br /><br />
 		<label>Input Your email</label><br />
-		<input type="email">
-		<br/><br />
-		<input type="submit" onclick='/submitInput'/>
+		<input type="email" id='email'>
+		<br /><br />
+		<input type="submit" id="btnAddUser">
 	</form>
 
 
-	
+	<script>
+		// Add User button click
+		$("form").submit(function (e) {
+
+			e.preventDefault();
+
+			// // Super basic validation - increase errorCount variable if any fields are blank
+			// var errorCount = 0;
+			// $('#addUser input').each(function(index, val) {
+			//     if($(this).val() === '') { errorCount++; }
+			// });
+
+			// Check and make sure errorCount's still at zero
+
+
+			// If it is, compile all user info into one object
+			var newUser = {
+				'username': $('#stdID').val(),
+				'email': $('#email').val(),
+				'fullname': $('#name').val(),
+			}
+
+			// var data = newUser.serialize();
+
+			// Use AJAX to post the object to our adduser service
+			$.ajax({
+				url: '/newUser',
+				// type: 'POST',
+				data: newUser,
+				method: 'POST',
+				contentType: "application/x-www-form-urlencoded",
+				success: function (res) {
+					
+					alert(data)
+				},
+				error: function (err) {
+					console.log(err);
+					// alert(newUser)
+				}
+
+			})
+	})
 	</script>
+
 </body>
 
 </html>
