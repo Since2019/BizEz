@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+button {
+    outline: none;
+}
+
+.section-module {
+    margin: 50px 50px;
+}
+
+.section-module-title {
+    font-size: 45px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#sc1-banner-container {
+    /* border: 1px solid black; */
+    color: white;
+    position: relative;
+    width: 100%;
+    height: 52vw;
+    background: url("/ProjectHub/static/img/index-banner.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    position: relative; 
+}
+
+#sc1-banner-container h2 {
+    font-size: 8vw;
+}
+
+#sc1-banner-container p {
+    padding: 20px 0;
+}
+
+#sc1-content-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.login-btn-style {
+    font-size: 15px;
+    width: auto;
+    padding: 7px 20px;
+    border-radius: 25px;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    margin-right: 20px;
+    margin-top: 20px;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+
+.login-btn-style:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 1px solid rgb(0, 0, 0, 0);
+
+}
+
+#sc1-btn-wrap {
+    position: absolute;
+    top: 0;
+    right: 50px;
+}
+
+#explore-btn {
+    font-size: 20px;
+}
+
+/* About the project section */
+#sc2-about-container {
+    /* border: 1px solid black; */
+    margin: 50px 100px;
+}
+
+.sc2-content-wrap {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(500px, 1fr));
+    padding-bottom: 150px;
+}
+
+.sc2-about-subtit {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0 40px;
+}
+
+.sc2-content-info-subtit {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.sc2-about-content {
+    line-height: 1.6em;
+    padding: 40px;
+}
+
+.sc2-content-info-wrap {
+    margin-bottom: 100px;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr));
+    text-align: center;
+}
+
+.sc2-content-wrap img {
+    /* filter: drop-shadow(2px 2px 5px #676666); */
+}
+
+.sc2-info-subtit {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.sc2-info-content {
+    padding: 20px;
+}
+
+/* Team member section  */
+#sc3-team-container {
+    /* border: 1px solid black; */
+}
+
+.sc3-team-wrap {
+    padding: 20px 20px;
+}
+
+.sc3-team-wrap i {
+    font-size: 25px;
+    padding: 10px 10px;
+    transition: transform 0.5s;
+}
+
+.sc3-team-wrap i:hover {
+    transform: scale(1.4);
+}
+
+.sc3-team-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+#sc3-team-all-wrap {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
+    text-align: center;
+}
+
+.sc3-team-name {
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.sc3-team-title {
+    padding: 20px 0;
+}
+
+.sc3-team-info {
+    font-size: 14px;
+    color: rgb(79, 78, 78);
+    height: 70px;
+}
+
+footer {
+    height: 50px;
+    color: #EDECEC;
+    font-size: 12px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
