@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* contains side bar, header, chart */
+#page-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    /* for visiual test purpose only */
+    height: 50vw;
+}
+
+/* side nav bar container */
+#sc-side-nav-bar {
+
+}
+
+.main-logo {
+    padding: 20px 30px;
+}
+
+.side-nav-bar-category {
+    display: flex;
+    align-items: center;
+}
+
+.side-nav-bar-category img {
+    padding: 10px 30px;
+    color: rgb(0, 0, 0);
+}
+
+.side-nav-bar-category p {
+    font-size: 20px;
+}
+
+#create-product-btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(29,161,242,1.00);
+    transition: color 0.5s, border 0.5s, background-color 0.5s;
+    margin: 20px 20px;
+}
+
+#create-product-btn:hover {
+    color: rgba(29,161,242,1.00);
+    border: 1px solid rgba(29,161,242,1.00);
+    background-color: white;
+}
+
+/* center header nav bar */
+#sc-top-header-bar {
+    border: 1px solid black;
+    display: flex;
+    padding: 10px 50px 10px 20px;
+}
+
+#point-wrap {
+    margin-left: auto;
+}
+
+.header-icon-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.header-icon-wrap img {
+    padding: 10px 20px;
+}
+
+
+/* graphic char  */
+#sc-main-chart {
+    border: 1px solid black;
+}
+
+/* item list section */
+#sc-item-list {
+    border: 1px solid black;
+}
+
+/* create a product button */
+#create-product-btn {
+
+}
+

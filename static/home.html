@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+    <link rel="stylesheet" href="CSS/home.css" />
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div id="page-container">
+        <!-- Side nav bar wrap contains dashboard, profile, and mall -->
+        <div id="sc-side-nav-bar">
+            <!-- main logo -->
+            <img class="main-logo" src="img/bestbuy-logo.png" width="auto" height="60px">
+            <!-- side bar category wrap with each flex  -->
+            <div id="side-bar-category-wrap">
+                <div class="side-nav-bar-category">
+                    <img src="img/home.png" width="30px" height="30px">
+                    <p>Dashboard</p>
+                </div>
+
+                <div class="side-nav-bar-category">
+                    <img src="img/comment.png" width="30px" height="30px">
+                    <p>Profile</p>
+                </div>
+
+                <div class="side-nav-bar-category">
+                    <img src="img/bookmark.png" width="30px" height="30px">
+                    <p>Mall</p>
+                </div>
+            </div>
+
+            <!-- create a new product btn -->
+            <div id="create-product-btn-wrap">
+                <button id="create-product-btn">POST</button>
+            </div>
+        </div>
+
+        <!-- main section container shows the header, chart, and the item list -->
+        <div id="main-section-container">
+            <!-- center top header section -->
+            <div id="sc-top-header-bar">
+                <div class="header-icon-wrap">
+                    <img src="img/home.png" width="25px" height="auto">
+                    <p class="header-subtext">Dashboard</p>
+                </div>
+                <div id="point-wrap" class="header-icon-wrap">
+                    <img src="img/tag.png" width="25px" height="auto">
+                    <p class="header-subtext" id="user-tag-count">45</p>
+                </div>
+                <div class="header-icon-wrap">
+                    <img src="img/logout.png" width="25px" height="auto">
+                    <p class="header-subtext">Logout</p>
+                </div>
+            </div>
+
+            <!-- main section shows the chart -->
+            <div id="sc-main-chart">
+                <img src="img/chart-sample.png" width="auto" height="600px">
+            </div>
+
+            <!-- item of the seller section  -->
+            <div id="sc-item-list-wrap">
+                <div class="item-list">
+                    <img src="img/item-showcase-sample.png" width="auto" height="200px">
+                    <p class="item-name">HP 15.6" Laptop - Silver (Intel Core
+                        i3-1005G1/256GB SSD/8GB
+                        RAM/Windows 10)</p>
+                    <p class="item-price">$499.99</p>
+                    <div class="item-rate-wrap">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <p class="item-comment-count">433</p>
+                    </div>
+                </div>
+
+                <div class="item-list">
+                    <img src="img/item-showcase-sample.png" width="auto" height="200px">
+                    <p class="item-name">HP 15.6" Laptop - Silver (Intel Core
+                        i3-1005G1/256GB SSD/8GB
+                        RAM/Windows 10)</p>
+                    <p class="item-price">$499.99</p>
+                    <div class="item-rate-wrap">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <p class="item-comment-count">433</p>
+                    </div>
+                </div>
+
+                <div class="item-list">
+                    <img src="img/item-showcase-sample.png" width="auto" height="200px">
+                    <p class="item-name">HP 15.6" Laptop - Silver (Intel Core
+                        i3-1005G1/256GB SSD/8GB
+                        RAM/Windows 10)</p>
+                    <p class="item-price">$499.99</p>
+                    <div class="item-rate-wrap">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <p class="item-comment-count">433</p>
+                    </div>
+                </div>
+
+                <div class="item-list">
+                    <img src="img/item-showcase-sample.png" width="auto" height="200px">
+                    <p class="item-name">HP 15.6" Laptop - Silver (Intel Core
+                        i3-1005G1/256GB SSD/8GB
+                        RAM/Windows 10)</p>
+                    <p class="item-price">$499.99</p>
+                    <div class="item-rate-wrap">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <p class="item-comment-count">433</p>
+                    </div>
+                </div>
+
+                <div class="item-list">
+                    <img src="img/item-showcase-sample.png" width="auto" height="200px">
+                    <p class="item-name">HP 15.6" Laptop - Silver (Intel Core
+                        i3-1005G1/256GB SSD/8GB
+                        RAM/Windows 10)</p>
+                    <p class="item-price">$499.99</p>
+                    <div class="item-rate-wrap">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <p class="item-comment-count">433</p>
+                    </div>
+                </div>
+
+                <div class="item-list">
+                    <img src="img/item-showcase-sample.png" width="auto" height="200px">
+                    <p class="item-name">HP 15.6" Laptop - Silver (Intel Core
+                        i3-1005G1/256GB SSD/8GB
+                        RAM/Windows 10)</p>
+                    <p class="item-price">$499.99</p>
+                    <div class="item-rate-wrap">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <p class="item-comment-count">433</p>
+                    </div>
+                </div>
+
+                <div class="item-list">
+                    <img src="img/item-showcase-sample.png" width="auto" height="200px">
+                    <p class="item-name">HP 15.6" Laptop - Silver (Intel Core
+                        i3-1005G1/256GB SSD/8GB
+                        RAM/Windows 10)</p>
+                    <p class="item-price">$499.99</p>
+                    <div class="item-rate-wrap">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <p class="item-comment-count">433</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- create new item button -->
+            <div id="create-product-btn-right">
+                <i class="fas fa-plus-circle"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
