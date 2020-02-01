@@ -79,16 +79,8 @@ button:focus {
     color: rgb(21,21,21);
 }
 
-#profile-wrap img {
-    padding: 0;
-    border-radius: 50%;
-    border: 1px solid rgba(29,161,242);
+#point-wrap {
     margin-left: 700px;
-    margin-right: 10px;
-}
-
-#user-tag-count {
-    transform: translateX(-10px);
 }
 
 .header-icon-wrap {
@@ -104,44 +96,6 @@ button:focus {
     /* background-color: #E0E6EF; */
 }
 
-#sc-category-user-wrap {
-    display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
-    justify-items: center;
-    text-align: center;
-    padding: 40px 20px;
-    margin-top: 30px;
-}
-
-.sc-category-user {
-    background-color: rgb(255, 255, 255);
-    border: 1px solid lightgray;
-    border-radius: 10px;
-    padding: 20px 40px;
-}
-
-.hor-line {
-    width: auto;
-    background-color: rgb(191, 190, 190);
-    height: 1px;
-    margin-bottom: 10px;
-}
-
-.sc-category-subtitle {
-    font-size: 14px;
-    color: rgb(174, 174, 174);
-}
-
-.sc-category-user img {
-    padding-top: 20px;
-}
-
-.sc-category-title {
-    text-align: center;
-    font-size: 25px;
-    padding: 20px 0;
-}
-
 /* graphic char  */
 #sc-main-chart {
     /* border: 1px solid black; */
@@ -150,11 +104,6 @@ button:focus {
 }
 
 /* item list section */
-.item-container-tit {
-    padding: 40px 0 0 80px;
-    font-size: 30px;
-}
-
 #sc-item-list-wrap {
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(350px, 1fr));
@@ -165,7 +114,7 @@ button:focus {
 }
 
 .item-name {
-    padding: 10px 40px;
+    padding: 10px 20px;
 }
 
 .fas {
