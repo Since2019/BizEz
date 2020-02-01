@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 
     <link rel="stylesheet" href="CSS/home.css" />
-    <title>Dashboard</title>
+    <title>Shop</title>
 </head>
 
 <body>
@@ -80,14 +80,14 @@
 
                     </div>
 
-                    <div class="sc-category-user">
+                    <div class="sc-category-user" id="rank-box">
                         <img src="img/reward.png" width="100px" height="auto">
                         <p class="sc-category-title">Rank</p>
                         <div class="hor-line"></div>
                         <p class="sc-category-subtitle">See what privilege you have next level.</p>
                     </div>
 
-                    <div class="sc-category-user">
+                    <div class="sc-category-user" id="reward-box">
                         <img src="img/book.png" width="100px" height="auto">
                         <p class="sc-category-title">Reward</p>
                         <div class="hor-line"></div>
@@ -224,7 +224,116 @@
     </div>
 
 
+    <!-- Ranking info. model -->
+    <div id="uid-rank-info-bg">
+        <div id="uid-rank-info">
+            <img class="user-profile" src="img/yang-profile.jpg" width="120px" height="auto">
+            <p class="user-level">Lv. Senior Seller</p>
+            <p>455 exp / 3000 exp</p>
+            <div class="user-next-level">
+                <p>Next level will unlock...</p>
+                <div class="next-level-unlock">
+                    <img src="img/tag.png" width="30px" height="auto">
+                    <img src="img/tag.png" width="30px" height="auto">
+                    <img src="img/tag.png" width="30px" height="auto">
+                    <img src="img/tag.png" width="30px" height="auto">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ranking info. model -->
+    <div id="uid-reward-info-bg">
+        <div class="uid-reward-info">
+
+            <div class="uid-warp">
+                <img class="reward-goal" src="img/target.png">
+                <div class="reward-content-wrap">
+                    <p class="reward-name">Contributor</p>
+                    <p class="reward-info">Complete all the information for an prodcut that being sell</p>
+                    <div class="progress">
+                        <div class="bar" style="width:35%">
+                            <p class="percent">35%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reward-amount">
+                    <img class="reward-point" src="img/tag.png">
+                    <p class="reward-tag-number">50</p>
+                </div>
+            </div>
+
+            <div class="uid-warp">
+                <img class="reward-goal" src="img/target-1.png">
+                <div class="reward-content-wrap">
+                    <p class="reward-name">Unstoppable</p>
+                    <p class="reward-info">Updated product information to the system more than 5</p>
+                    <div class="progress">
+                        <div class="bar" style="width:65%">
+                            <p class="percent">65%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reward-amount">
+                    <img class="reward-point" src="img/tag.png">
+                    <p class="reward-tag-number">100</p>
+                </div>
+            </div>
+
+            <div class="uid-warp">
+                <img class="reward-goal" src="img/target-3.png">
+                <div class="reward-content-wrap">
+                    <p class="reward-name">Continous Sell</p>
+                    <p class="reward-info">Sold your products in a row during the same month </p>
+                    <div class="progress">
+                        <div class="bar" style="width:85%">
+                            <p class="percent">85%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reward-amount">
+                    <img class="reward-point" src="img/tag.png">
+                    <p class="reward-tag-number">60</p>
+                </div>
+            </div>
+
+            <div class="uid-warp">
+                <img class="reward-goal" src="img/target-4.png">
+                <div class="reward-content-wrap">
+                    <p class="reward-name">Top Seller</p>
+                    <p class="reward-info">Achieved the highest rank during the month</p>
+                    <div class="progress">
+                        <div class="bar" style="width:15%">
+                            <p class="percent">15%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reward-amount">
+                    <img class="reward-point" src="img/tag.png">
+                    <p class="reward-tag-number">10</p>
+                </div>
+            </div>
+
+            <div class="reward-page">
+                <i class="fas fa-circle"></i>
+                <i class="far fa-circle"></i>
+                <i class="far fa-circle"></i>
+                <i class="far fa-circle"></i>
+                <i class="far fa-circle"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- analysis info. model -->
+    <div id="uid-chart-info-bg">
+        <div id="uid-chart-info">
+            <img src="img/item-showcase-sample.png" width="600px" height="auto">
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="JS/home.js"></script>
 </body>
 
 </html>

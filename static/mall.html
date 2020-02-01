@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+    <link rel="stylesheet" href="CSS/mall.css" />
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div id="page-container">
+        <!-- Side nav bar wrap contains dashboard, profile, and mall -->
+        <div id="sc-side-nav-bar">
+            <!-- main logo -->
+            <img class="main-logo" src="img/bestbuy-logo.png" width="auto" height="60px">
+            <!-- side bar category wrap with each flex  -->
+            <div id="side-bar-category-wrap">
+                <div class="side-nav-bar-category">
+                    <img src="img/home.png" width="30px" height="30px">
+                    <p>Dashboard</p>
+                </div>
+
+                <div class="side-nav-bar-category">
+                    <img src="img/comment.png" width="30px" height="30px">
+                    <p>Profile</p>
+                </div>
+
+                <div class="side-nav-bar-category">
+                    <img src="img/bookmark.png" width="30px" height="30px">
+                    <p>Shop</p>
+                </div>
+            </div>
+
+            <!-- create a new product btn -->
+            <div id="create-product-btn-wrap">
+                <button id="create-product-btn">POST</button>
+            </div>
+        </div>
+
+        <!-- main section container shows the header, chart, and the item list -->
+        <div id="main-section-container">
+            <!-- center top header section -->
+            <div id="sc-top-header-bar">
+                <div class="header-icon-wrap">
+                    <img src="img/bookmark-b.png" width="25px" height="auto">
+                    <p class="header-subtext">Shop</p>
+                </div>
+                <div id="profile-wrap" class="header-icon-wrap">
+                    <img src="img/yang-profile.jpg" width="25px" height="25px">
+                </div>
+                <div id="point-wrap" class="header-icon-wrap">
+                    <img src="img/tag.png" width="25px" height="auto">
+                    <p class="header-subtext" id="user-tag-count">45</p>
+                </div>
+                <div class="header-icon-wrap">
+                    <img src="img/logout.png" width="25px" height="auto">
+                    <p class="header-subtext">Logout</p>
+                </div>
+            </div>
+
+            <!-- Shop item section container -->
+            <div id="shop-main-section">
+                <div class="shop-item-wrap">
+                    <img class="shop-icon" src="img/shop-1.png">
+                    <p class="item-name">Temporarily Preferred Display</p>
+
+                    <div class="item-bg">
+                        <p class="item-info">Using this item will put you specific item to the Bestbuy in the first
+                            display
+                        </p>
+                        <div class="item-price">
+                            <p class="item-price-num">50</p>
+                            <img class="item-tag" src="img/tag-w.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-item-wrap">
+                    <img class="shop-icon" src="img/shop-2.png">
+                    <p class="item-name">Temporarily Preferred Display</p>
+
+                    <div class="item-bg">
+                        <p class="item-info">Using this item will put you specific item to the Bestbuy in the first
+                            display
+                        </p>
+                        <div class="item-price">
+                            <p class="item-price-num">50</p>
+                            <img class="item-tag" src="img/tag-w.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="shop-item-wrap">
+                    <img class="shop-icon" src="img/shop-3.png">
+                    <p class="item-name">Temporarily Preferred Display</p>
+
+                    <div class="item-bg">
+                        <p class="item-info">Using this item will put you specific item to the Bestbuy in the first
+                            display
+                        </p>
+                        <div class="item-price">
+                            <p class="item-price-num">50</p>
+                            <img class="item-tag" src="img/tag-w.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="shop-item-wrap">
+                    <img class="shop-icon" src="img/shop-4.png">
+                    <p class="item-name">Temporarily Preferred Display</p>
+
+                    <div class="item-bg">
+                        <p class="item-info">Using this item will put you specific item to the Bestbuy in the first
+                            display
+                        </p>
+                        <div class="item-price">
+                            <p class="item-price-num">50</p>
+                            <img class="item-tag" src="img/tag-w.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-item-wrap">
+                    <img class="shop-icon" src="img/shop-5.png">
+                    <p class="item-name">Temporarily Preferred Display</p>
+
+                    <div class="item-bg">
+                        <p class="item-info">Using this item will put you specific item to the Bestbuy in the first
+                            display
+                        </p>
+                        <div class="item-price">
+                            <p class="item-price-num">50</p>
+                            <img class="item-tag" src="img/tag-w.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-item-wrap">
+                    <img class="shop-icon" src="img/shop-6.png">
+                    <p class="item-name">Temporarily Preferred Display</p>
+
+                    <div class="item-bg">
+                        <p class="item-info">Using this item will put you specific item to the Bestbuy in the first
+                            display
+                        </p>
+                        <div class="item-price">
+                            <p class="item-price-num">50</p>
+                            <img class="item-tag" src="img/tag-w.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-item-wrap">
+                    <img class="shop-icon" src="img/shop-7.png">
+                    <p class="item-name">Temporarily Preferred Display</p>
+
+                    <div class="item-bg">
+                        <p class="item-info">Using this item will put you specific item to the Bestbuy in the first
+                            display
+                        </p>
+                        <div class="item-price">
+                            <p class="item-price-num">50</p>
+                            <img class="item-tag" src="img/tag-w.png">
+                        </div>
+                    </div>
+                </div>
+
+                
+     
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+            <script src="JS/home.js"></script>
+</body>
+
+</html>

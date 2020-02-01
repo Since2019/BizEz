@@ -27,6 +27,7 @@
     "express": "^4.17.1",
     "http-msgs": "^1.0.9",
     "mongodb": "^3.5.2",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "three-dots": "^0.1.2"
   }
 }
