@@ -179,6 +179,13 @@ button:focus {
   color: rgba(29,161,242,1.00);
 }
 
+.upload_input_div{
+  padding-left: 10%;
+  margin-bottom: 5px;
+  outline: none;
+}
+
+
 .tag{
   width: 100%;
 }
