@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { Fragment } from "react";
+import { Link } from "react-router-dom";
 import "../styles/home.css";
 
 import img1 from "./img/bestbuy-logo.png";
@@ -37,21 +38,21 @@ const Home = () => {
   const [isRank, setIsRank] = useState(false);
   const [isReward, setIsReward] = useState(false);
 
-  const openReward=()=>{
-    !isReward&&setIsReward(!isReward);
-  }
+  const openReward = () => {
+    !isReward && setIsReward(!isReward);
+  };
 
-  const openRank=()=>{
-    !isRank&&setIsRank(!isRank);
-  }
+  const openRank = () => {
+    !isRank && setIsRank(!isRank);
+  };
 
-  const closeReward=()=>{
-    isReward&&setIsReward(!isReward);
-  }
+  const closeReward = () => {
+    isReward && setIsReward(!isReward);
+  };
 
-  const closeRank=()=>{
-    isRank&&setIsRank(!isRank);
-  }
+  const closeRank = () => {
+    isRank && setIsRank(!isRank);
+  };
 
   return (
     <Fragment>
@@ -80,7 +81,9 @@ const Home = () => {
           </div>
 
           <div className="create-product-btn-wrap">
-            <button className="create-product-btn">POST</button>
+            <Link to="/dashboard" exact>
+              <button className="create-product-btn">POST</button>
+            </Link>
           </div>
         </div>
 
