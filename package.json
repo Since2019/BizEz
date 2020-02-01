@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/Rickson2019/ProjectHub#readme",
   "dependencies": {
+    "@google-cloud/storage": "^4.3.0",
+    "@google-cloud/vision": "^1.8.0",
     "express": "^4.17.1",
     "http-msgs": "^1.0.9",
     "mongodb": "^3.5.2",
