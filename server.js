@@ -2,11 +2,14 @@ const express = require('express');
 var MongoClient = require('mongodb').MongoClient;
 const app = express();
 
+var url =
+  'mongodb+srv://helloworld:bcitteam28@cluster0-r8cwn.mongodb.net/test?retryWrites=true&w=majority';
+
 // Init Middleware
 app.use(express.json({ extended: false }));
 
 let visitorNum = 0;
-
+const data = [];
 app.get('/', (req, res) => {
   async function quickstart() {
     try {
@@ -17,16 +20,22 @@ app.get('/', (req, res) => {
       const client = new vision.ImageAnnotatorClient();
 
       // Performs label detection on the image file
-      const [result] = await client.labelDetection(`./static/img/unknown.png`);
+      const [result] = await client.labelDetection(`./ipad.jpg`);
       const labels = result.labelAnnotations;
-      const data = [];
-      console.log('Labels:');
-      labels.forEach(label => data.push(label.description[0]));
-      console.log(data);
+      // console.log('Labels:');
+      labels.forEach(label => data.push(label.description));
 
-      res.json(data);
-      res.json(data);
-      res.json(data);
+      MongoClient.connect(url, async (err, db) => {
+        var bestbuy_store = await db.db('bestbuy_store');
+        if (err) throw err;
+        await bestbuy_store
+          .collection('products')
+          .findOne({ name: data[0] }, function(err, result) {
+            if (err) throw err;
+            db.close();
+            res.json(result);
+          });
+      });
     } catch (err) {
       res.send({ error: err.message });
     }
