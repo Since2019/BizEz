@@ -73,7 +73,7 @@ const Home = () => {
               <img src={img5} width="25px" height="auto" />
               <p className="header-subtext">Dashboard</p>
             </div>
-            <div className="profile-wrap header-icon-wrap">
+            <div className="profile-icon-wrap profile-wrap">
               <img src={img6} width="25px" height="25px" />
             </div>
             <div className="point-wrap header-icon-wrap">
