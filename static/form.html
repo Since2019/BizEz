@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 
     <link rel="stylesheet" href="CSS/form.css" />
-    <title>Dashboard</title>
+    <title>Post</title>
 </head>
 
 <body>
@@ -31,13 +31,13 @@
                 </div>
 
                 <div class="side-nav-bar-category">
-                    <img src="img/comment.png" width="30px" height="30px">
+                    <img src="img/user.png" width="30px" height="30px">
                     <p>Profile</p>
                 </div>
 
                 <div class="side-nav-bar-category">
-                    <img src="img/bookmark.png" width="30px" height="30px">
-                    <p>Mall</p>
+                    <img src="img/shop.png" width="30px" height="30px">
+                    <p>Shop</p>
                 </div>
             </div>
 
@@ -52,8 +52,11 @@
             <!-- center top header section -->
             <div id="sc-top-header-bar">
                 <div class="header-icon-wrap">
-                    <img src="img/home.png" width="25px" height="auto">
-                    <p class="header-subtext">Dashboard</p>
+                    <img src="img/shop-b.png" width="25px" height="auto">
+                    <p class="header-subtext">Shop</p>
+                </div>
+                <div id="profile-wrap" class="header-icon-wrap">
+                    <img src="img/yang-profile.jpg" width="25px" height="25px">
                 </div>
                 <div id="point-wrap" class="header-icon-wrap">
                     <img src="img/tag.png" width="25px" height="auto">
@@ -65,50 +68,41 @@
                 </div>
             </div>
 
-            <!-- main section shows forms -->
+            <!-- Center form -->
             <div id="sc-main-form">
                 <div class="sc-main-form-1">
                     <div class="search">
-                        <input id="search_item" type="text"/>
+                        <input id="search_item" type="text" placeholder="type serial number of unique identify id.."/>
                         <button id="search_button">Search</button>
                     </div>
-                    <div class="image"></div>
-                        <div class="tag">
+                    <div class="image">
+                        <div class="image-wrap">
+                        <p class="image-title">Drag & Drop Images Here</p>
+                        <img id="upload-img" src="img/upload.png" width="50px" height="auto">
+                        <p class="image-title">Or</p>
+                        <button id="image-upload-btn">Upload Image</button>
+                    </div>
+                    </div>
+                    <div class="tag">
                         <div class="tag-list">
-                            <button class="tag-item">tag1</button>
-                            <button class="tag-item">tag2</button>
-                            <button class="tag-item">tag3</button>
-                            <button class="tag-item">tag4</button>
+                            <button class="tag-item">technology</button>
+                            <button class="tag-item">laptop</button>
+                            <button class="tag-item">mac</button>
+                            <button class="tag-item">2019</button>
+                            <button class="tag-item">Apple</button>
+                            <button class="tag-item">256GB</button>
+                            <button class="tag-item">Intel</button>
+                            <button class="tag-item">SSD</button>
+                            <button class="tag-item">Macbook</button>
+                            <i id="create-tag-btn" class="fas fa-plus-circle"></i>
                         </div>
-                        <div class="tag-list">
-                            <button class="tag-item">tag5</button>
-                            <button class="tag-item">tag6</button>
-                            <button class="tag-item">tag7</button>
-                            <button class="tag-item">tag8</button>
-                        </div>
+                        
                     </div>
                 </div>
-                <div class="sc-main-form-2">
-                    <div>Detail</div>
-                    <form class="form">
-                        <div class="input_section">
-                            <label class="label" for="name">Name</label>
-                            <input class="label_input" type="text" name="name" id="name">
-                        </div>
-                        <div class="input_section">
-                            <label class="label" for="model">Model No</label>
-                            <input class="label_input" type="text" name="model" id="model">
-                        </div>
-                        <div class="input_section">
-                            <label class="label" for="price">Price</label>
-                            <input class="label_input" type="text" name="price" id="price">
-                        </div>
-                        <button class="submit_button">SUBMIT</button>
-                    </form>
-                </div>
-            </div>            
-        </div>
-    </div>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+            <script src="JS/home.js"></script>
 </body>
 
 </html>
