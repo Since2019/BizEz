@@ -11,6 +11,11 @@ import img8 from './img/logout.png'
 import img9 from './img/upload.png'
 
 const Form = () => {
+    
+    const upload=()=>{
+        // Upload Function Here
+    }
+
   return (
     <Fragment>
        <div className="page-container">
@@ -68,7 +73,7 @@ const Form = () => {
                         <p className="image-title">Drag & Drop Images Here</p>
                         <img className="upload-img" src={img9} width="50px" height="auto"/>
                         <p className="image-title">Or</p>
-                        <button className="image-upload-btn">Upload Image</button>
+                        <button className="image-upload-btn" onClick={upload}>Upload Image</button>
                     </div>
                     </div>
                     <div className="tag">
