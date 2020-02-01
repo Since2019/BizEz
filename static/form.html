@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+    <link rel="stylesheet" href="CSS/form.css" />
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div id="page-container">
+        <!-- Side nav bar wrap contains dashboard, profile, and mall -->
+        <div id="sc-side-nav-bar">
+            <!-- main logo -->
+            <img class="main-logo" src="img/bestbuy-logo.png" width="auto" height="60px">
+            <!-- side bar category wrap with each flex  -->
+            <div id="side-bar-category-wrap">
+                <div class="side-nav-bar-category">
+                    <img src="img/home.png" width="30px" height="30px">
+                    <p>Dashboard</p>
+                </div>
+
+                <div class="side-nav-bar-category">
+                    <img src="img/comment.png" width="30px" height="30px">
+                    <p>Profile</p>
+                </div>
+
+                <div class="side-nav-bar-category">
+                    <img src="img/bookmark.png" width="30px" height="30px">
+                    <p>Mall</p>
+                </div>
+            </div>
+
+            <!-- create a new product btn -->
+            <div id="create-product-btn-wrap">
+                <button id="create-product-btn">POST</button>
+            </div>
+        </div>
+
+        <!-- main section container shows the header, chart, and the item list -->
+        <div id="main-section-container">
+            <!-- center top header section -->
+            <div id="sc-top-header-bar">
+                <div class="header-icon-wrap">
+                    <img src="img/home.png" width="25px" height="auto">
+                    <p class="header-subtext">Dashboard</p>
+                </div>
+                <div id="point-wrap" class="header-icon-wrap">
+                    <img src="img/tag.png" width="25px" height="auto">
+                    <p class="header-subtext" id="user-tag-count">45</p>
+                </div>
+                <div class="header-icon-wrap">
+                    <img src="img/logout.png" width="25px" height="auto">
+                    <p class="header-subtext">Logout</p>
+                </div>
+            </div>
+
+            <!-- main section shows forms -->
+            <div id="sc-main-form">
+                <div class="sc-main-form-1">
+                    <div class="search">
+                        <input id="search_item" type="text"/>
+                        <button id="search_button">Search</button>
+                    </div>
+                    <div class="image"></div>
+                        <div class="tag">
+                        <div class="tag-list">
+                            <button class="tag-item">tag1</button>
+                            <button class="tag-item">tag2</button>
+                            <button class="tag-item">tag3</button>
+                            <button class="tag-item">tag4</button>
+                        </div>
+                        <div class="tag-list">
+                            <button class="tag-item">tag5</button>
+                            <button class="tag-item">tag6</button>
+                            <button class="tag-item">tag7</button>
+                            <button class="tag-item">tag8</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="sc-main-form-2">
+                    <div>Detail</div>
+                    <form class="form">
+                        <div class="input_section">
+                            <label class="label" for="name">Name</label>
+                            <input class="label_input" type="text" name="name" id="name">
+                        </div>
+                        <div class="input_section">
+                            <label class="label" for="model">Model No</label>
+                            <input class="label_input" type="text" name="model" id="model">
+                        </div>
+                        <div class="input_section">
+                            <label class="label" for="price">Price</label>
+                            <input class="label_input" type="text" name="price" id="price">
+                        </div>
+                        <button class="submit_button">SUBMIT</button>
+                    </form>
+                </div>
+            </div>            
+        </div>
+    </div>
+</body>
+
+</html>
