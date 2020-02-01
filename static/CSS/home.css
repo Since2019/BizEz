@@ -4,6 +4,7 @@
     font-family: 'Raleway', sans-serif;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 button:focus {
