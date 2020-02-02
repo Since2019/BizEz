@@ -1,21 +1,16 @@
-import React, { useState } from 'react';
+import React, { Fragment } from "react";
+import Home from "./components/Home";
+import { Route, Switch } from "react-router-dom";
+import Form from "./components/Form";
 
 const App = () => {
-
-  const [hello,setHello] = useState(0);
-const [str,setStr] = useState('hi');
-  const onclick=()=>{
-    setHello(hello+1);
-    console.log(hello);
-    
-  }
-
   return (
-    <div>
-      <h1>biz hack</h1>
-      <button onClick={onclick}>Hello</button>
-      <h1>{hello}</h1>
-    </div>
+    <Fragment>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/dashboard" component={Form} />
+      </Switch>
+    </Fragment>
   );
 };
 
