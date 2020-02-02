@@ -12,7 +12,7 @@ import img9 from "./img/upload.png";
 import { useState } from "react";
 
 const Form = () => {
-  const [tag,setTag] = useState(false);
+  const [tag, setTag] = useState(false);
 
   return (
     <Fragment>
@@ -47,10 +47,10 @@ const Form = () => {
               <img src={img5} width="25px" height="auto" />
               <p className="header-subtext">Shop</p>
             </div>
-            <div className="header-icon-wrap profile-wrap">
+            <div className="profile-icon-wrap profile-wrap">
               <img src={img6} width="25px" height="25px" />
             </div>
-            <div className="header-icon-wrap point-wrap">
+            <div className="point-wrap header-icon-wrap">
               <img src={img7} width="25px" height="auto" />
               <p className="user-tag-count header-subtext">45</p>
             </div>
@@ -68,9 +68,7 @@ const Form = () => {
                   type="text"
                   placeholder="type serial number of unique identify id.."
                 />
-                <button className="search_button" onClick={()=>{
-                  setTag(!tag);
-              }}>Search</button>
+                <button className="search_button">Search</button>
               </div>
               <div className="image">
                 <div className="image-wrap">
@@ -88,37 +86,40 @@ const Form = () => {
                     method="POST"
                   >
                     <div className="upload_input_div">
-                      <input
-                        type="file"
-                        name="upload"
-                        multiple="multiple"
-                      />
+                      <input type="file" name="upload" multiple="multiple" />
                     </div>
                     <input
                       type="submit"
                       value="Upload file"
                       className="image-upload-btn"
+                      onClick={() => {
+                        setTag(!tag);
+                        setTimeout(()=>{
+                          console.log('hehe');
+                        },3000);
+                      }}
                     />
                   </form>
 
                   {/* <button type="submit" value="Upload file" className="image-upload-btn" onClick={upload}>Upload Image</button> */}
                 </div>
               </div>
-              {tag&&<div className="tag">
-                <div className="tag-list">
-                  <button className="tag-item">technology</button>
-                  <button className="tag-item">laptop</button>
-                  <button className="tag-item">mac</button>
-                  <button className="tag-item">2019</button>
-                  <button className="tag-item">Apple</button>
-                  <button className="tag-item">256GB</button>
-                  <button className="tag-item">Intel</button>
-                  <button className="tag-item">SSD</button>
-                  <button className="tag-item">Macbook</button>
-                  <i className="fas fa-plus-circle create-tag-btn"></i>
+              {tag && (
+                <div className="tag">
+                  <div className="tag-list">
+                    <button className="tag-item">technology</button>
+                    <button className="tag-item">laptop</button>
+                    <button className="tag-item">mac</button>
+                    <button className="tag-item">2019</button>
+                    <button className="tag-item">Apple</button>
+                    <button className="tag-item">256GB</button>
+                    <button className="tag-item">Intel</button>
+                    <button className="tag-item">SSD</button>
+                    <button className="tag-item">Macbook</button>
+                    <i className="fas fa-plus-circle create-tag-btn"></i>
+                  </div>
                 </div>
-              </div>}
-              
+              )}
             </div>
           </div>
         </div>

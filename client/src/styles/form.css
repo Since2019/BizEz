@@ -86,6 +86,10 @@ button:focus {
   margin-right: 10px;
 }
 
+.profile-icon-wrap{
+  padding:10px 10px;
+}
+
 .user-tag-count {
   transform: translateX(-10px);
 }
