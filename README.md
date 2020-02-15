@@ -11,10 +11,15 @@ Our idea originated from a discussion of how we could find people who want to wo
 
 ### Team member
 [Designer: Yang Li](https://github.com/yang052513)
+
 [Database Manager: Ciro Cheng]()
+
 [Front-end Developer: Jay](https://github.com/jayhan1109)
+
 [Back-end Developer: Wenbo Ji](https://github.com/wenboji)
+
 [Back-end Developer: Judao Zhong](https://github.com/Rickson2019)
+
 
 ### API Reference
 
